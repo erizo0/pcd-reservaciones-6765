@@ -10,6 +10,40 @@ Tema: Reservaciones
 
 ## Observaciones del profesor
 
+### Práctica 1 — evaluación (8-oct-2026, 00:51 h)
+
+**Calificación: 60 / 100**
+
+Entregada el **6-oct-2026 a las 19:58**, dentro del plazo (la entrega cerraba el mar 6-oct), así que no lleva penalización por retraso.
+
+**Criterios cubiertos al 100%:** Estructura del monorepo (6/6); Python puro (sin `csv` ni `pandas`, lectura con `open`); Encabezado: Archivo, Pareja, Seed; Primeras 5 filas (separadas con barra y espacios).
+
+**Observaciones:**
+
+1. Corrieron el script sobre el archivo de muestra `reservaciones-ruido_100.csv` en vez del dataset real `reservaciones-ruido_100000.csv`: reportan 103 filas y son 103000. **Esta es la causa de que casi todos los números del reporte no cuadren** (valores únicos, mínimos, máximos y celdas vacías). Vuelvan a correrlo apuntando al archivo `_100000` y el resto se corrige solo.
+2. El script debe llamarse `resumen.py`; ustedes subieron `p1.py`.
+3. La salida debe llamarse `resumen.txt`; ustedes subieron `resumen_ejemplo.txt`.
+4. No cumplen el requisito de rama: se pedía crear una rama de trabajo (por ejemplo `feature/resumen`), trabajarla y mergearla a `main`. Su repositorio solo tiene `main`.
+5. Faltan los encabezados de sección del formato pedido: `--- Dimensiones ---`. El contenido puede estar, pero las secciones deben ir delimitadas tal como las muestra el enunciado.
+6. Los números de la columna categórica no cuadran: reportan 11 únicos y más frecuente `Puerto Vallarta` (17), y lo correcto es 20 únicos y `Merida` (13761).
+7. El mínimo/máximo de `precio_noche` no coincide: reportan mín -2433.48 / máx 23353.4, y es mín -26954.3 / máx 325370.4.
+
+**Desglose:**
+
+| Criterio | Obtenido | Máximo |
+|---|:---:|:---:|
+| Estructura del monorepo (6/6) | 8 | 8 |
+| Nombres exactos de los entregables | 0 | 10 |
+| Requisitos de Git (3+ commits, rama mergeada) | 5 | 10 |
+| Python puro (sin `csv` ni `pandas`, lectura con `open`) | 8 | 8 |
+| Formato del `resumen.txt` (encabezado y secciones) | 7.6 | 9 |
+| Encabezado: Archivo, Pareja, Seed | 10 | 10 |
+| Dimensiones: filas, columnas, nombres | 6 | 10 |
+| Primeras 5 filas (separadas con barra y espacios) | 5 | 5 |
+| Columna categórica (nombre, únicos, más frecuente) | 5 | 12 |
+| Columna numérica_1 (nombre, válidos, mín, máx) | 5 | 13 |
+| Calidad de datos (celdas vacías) | 0 | 5 |
+| **Total** | **60** | **100** |
 ### 22-sep-2026
 
 **Estatus:** 5/6 de la estructura esperada.
