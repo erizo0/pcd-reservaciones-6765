@@ -1,0 +1,40 @@
+=== RESUMEN DEL DATASET ===
+Archivo: reservaciones_ruido.csv
+Pareja: Cruz González Erick Miguel y Escamilla Camarillo Ricardo
+Seed: 6765
+
+--- Dimensiones ---
+Filas: 103000
+Columnas: 9
+Nombres de columnas: email, timestamp, destino, comentario_hospedaje, telefono, direccion, dias_anticipacion, precio_noche, id
+
+
+--- Primeras 5 filas ---
+email       |      timestamp       |      destino       |      comentario_hospedaje       |      telefono       |      direccion       |      dias_anticipacion       |      precio_noche       |      id
+mariaflores35@live.com|19-02-24 08:45:53|CDMX|Excelente ubicacion y atencion del personal|24-7429-9341|Calle Juarez #1814, Col. San Pedro, Guadalajara|25.0|1800.35|a962572e13
+carlos.torres55@gmail.com|2023-07-04 14:56:01|Oaxaca|Muy buena relacion calidad precio para la zona|40-0857-1947|Calle Independencia #269, Col. La Paz, Guadalajara|12.0|2221.9|0b82b8d5a7
+valentina_lopez6@yahoo.com|2023-04-10 11:30:40|CDMX|La habitacion no coincidia con las fotos publicadas|68-2073-2312|Calle Allende #1678, Col. Roma Norte, Merida|40.0|1398.84|00b40ede02
+jose.gonzalez51@gmail.com|2024-03-06 19:41:56|Guadalajara|Excelente ubicacion y atencion del personal|13-4046-2684|Calle Allende #356, Col. Chapultepec, Merida|54.0|633.13|74353ae82a
+javier.hernandez45@gmail.com|20230514|Guadalajara|La habitacion no coincidia con las fotos publicadas|52-2792-5695|Calle Constitucion #1775, Col. San Pedro, Puebla|30.0|1905.51|e1a1dc71af
+
+--- Columna categórica: destino ---
+Valores únicos: 27
+Valor más frecuente: Merida (13482 apariciones)
+
+--- Columna numérica: precio_noche ---
+Valores válidos (no vacíos): 98869
+Mínimo: -26954.3
+Máximo: 325370.4
+
+--- Calidad de datos ---
+Celdas vacías totales: 32968
+Celdas vacías por columna:
+  email: 4129
+  timestamp: 4144
+  destino: 4108
+  comentario_hospedaje: 4113
+  telefono: 4113
+  direccion: 4107
+  dias_anticipacion: 4123
+  precio_noche: 4131
+  id: 0

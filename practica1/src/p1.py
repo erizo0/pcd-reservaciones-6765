@@ -40,7 +40,7 @@ def contar_vacios(filas, encabezados):
                 vacios[encabezados[i]] += 1
     return vacios
 #Separamos cada fila de datos para que sean filas "individuales"
-with open("C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/PCD_Asterix/datos/reservaciones-ruido_100.csv", "r") as archivo:
+with open("C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/PCD_Asterix/datos/reservaciones-ruido_100000.csv", "r") as archivo:
     lineas = archivo.readlines()
 
 #Indicamos que la primer fila individual es de encabezados.    
@@ -96,7 +96,7 @@ with open("resumen_ejemplo.txt", "w", encoding="utf-8") as f:
     f.write("Pareja: Cruz González Erick Miguel y Escamilla Camarillo Ricardo\n")
     f.write("Seed: 6765\n\n")
 
-    f.write("-- Dimensiones --\n")
+    f.write("--- Dimensiones ---\n")
     f.write(f"Filas: {len(datos)}\n")
     f.write(f"Columnas: {len(encabezados)}\n")
     f.write(f"Nombres de columnas: {', '.join(encabezados)}\n\n")
