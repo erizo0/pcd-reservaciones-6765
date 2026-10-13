@@ -10,6 +10,36 @@ Tema: Reservaciones
 
 ## Observaciones del profesor
 
+### 13-oct-2026 — Correcciones de la Práctica 1
+
+**Calificación de P1: 60 → 90 / 100.**
+
+**Atendieron 6 de sus 7 observaciones** (commits del 9-oct). Lo que corrigieron:
+
+1. Corrieron el script sobre `reservaciones-ruido_100000.csv`: ya reportan 103000 filas, y
+   con eso se acomodaron solos casi todos los números del reporte.
+2. Renombraron `p1.py` a `resumen.py`.
+3. Renombraron `resumen_ejemplo.txt` a `resumen.txt`.
+4. Crearon la rama `feauture/resumen`, trabajaron ahí las correcciones y quedó integrada en
+   `main`. Con eso ya cumplen el requisito de rama. Solo una nota: el nombre quedó con un
+   typo (`feauture` en vez de `feature`); no afecta la calificación, pero vale cuidarlo.
+5. Agregaron el encabezado de sección `--- Dimensiones ---`.
+6. El mínimo y máximo de `precio_noche` ya cuadran: -26954.3 y 325370.4.
+
+De la observación sobre la columna categórica queda una diferencia (ustedes reportan 27
+valores únicos y `Merida` con 13482; la referencia tiene 20 y 13761), pero **no se les
+descuenta**: es exactamente lo que sale al contar los valores sin aplicar `.strip()`, y esa
+lectura se dio por válida para todo el grupo porque el enunciado de P1 no decía cómo
+normalizar. Ténganlo presente para P4 y P5, donde van a limpiar justo ese tipo de ruido.
+
+**Pendiente aparte, que no afecta la calificación de P1:** en `practica2/` a `practica6/` y
+en `proyecto/` siguen los archivos de prueba (`bbb.txt`, `cccc.txt`, `ddd.txt`, `eeee.txt`,
+`fff.tx`, `ggg.txt`, `nummm.txt`, `kkdkjdsjsdlsdk.txt`, `rreange.txt` y los que están dentro
+de cada `src/` y `resultados/`). Ya limpiaron los de `practica1/`; hagan lo mismo con el
+resto antes de entregar P2, porque un repositorio limpio es parte de lo que se evalúa.
+
+**Cómo se aplicó el reconocimiento.** Nueve de los diez equipos que tenían observaciones las atendieron entre el 8 y el 12 de octubre. A quien corrigió y tenía 90 o más, su práctica queda en **99**; a quien tenía menos de 90, en **90**. El 100 se reserva para quien entregó bien desde la primera vez. En la tabla de calificaciones del curso su celda aparece como `anterior/vigente`: el primer número es la entrega original y **el segundo es el que cuenta**.
+
 ### Práctica 1 — evaluación (8-oct-2026, 00:51 h)
 
 **Calificación: 60 / 100**
