@@ -1,10 +1,115 @@
 {
-    "total_registros": 103000,
-    "destinos": {
-        "": {
-            "total_reservaciones": 103000,
-            "precio_promedio_noche": 0.0,
-            "dias_anticipacion_promedio": 0.0
-        }
+  "archivo": "reservaciones-ruido.csv",
+  "pareja": "Cruz González Erick Miguel y Escamilla Camarillo Ricardo",
+  "seed": 6765,
+  "valores_unicos_categorica": {
+    "columna": "destino",
+    "n_valores_unicos": 20,
+    "valores": [
+      "CANCUN",
+      "CDMX",
+      "Cancun",
+      "GUADALAJARA",
+      "Guadalajara",
+      "LOS CABOS",
+      "Los Cabos",
+      "MERIDA",
+      "Merida",
+      "OAXACA",
+      "Oaxaca",
+      "PUERTO VALLARTA",
+      "Puerto Vallarta",
+      "cancun",
+      "cdmx",
+      "guadalajara",
+      "los cabos",
+      "merida",
+      "oaxaca",
+      "puerto vallarta"
+    ]
+  },
+  "conteo_por_categoria": {
+    "CDMX": 13722,
+    "Oaxaca": 13756,
+    "Guadalajara": 13482,
+    "Cancun": 13462,
+    "Merida": 13761,
+    "Puerto Vallarta": 13631,
+    "Los Cabos": 13402,
+    "los cabos": 280,
+    "cancun": 255,
+    "OAXACA": 279,
+    "LOS CABOS": 287,
+    "merida": 274,
+    "CANCUN": 302,
+    "puerto vallarta": 271,
+    "guadalajara": 247,
+    "GUADALAJARA": 278,
+    "PUERTO VALLARTA": 292,
+    "cdmx": 282,
+    "oaxaca": 299,
+    "MERIDA": 330
+  },
+  "categoria_mas_frecuente": {
+    "valor": "Merida",
+    "conteo": 13761
+  },
+  "top_3_categorias": [
+    {
+      "valor": "Merida",
+      "conteo": 13761
+    },
+    {
+      "valor": "Oaxaca",
+      "conteo": 13756
+    },
+    {
+      "valor": "CDMX",
+      "conteo": 13722
     }
+  ],
+  "estadisticas_numerica_1": {
+    "columna": "precio_noche",
+    "n_valores_validos": 98869,
+    "minimo": -26954.3,
+    "maximo": 325370.4,
+    "promedio": 3277.04,
+    "mediana": 1911.54
+  },
+  "estadisticas_numerica_2": {
+    "columna": "dias_anticipacion",
+    "n_valores_validos": 98877,
+    "minimo": -580.0,
+    "maximo": 7200.0,
+    "promedio": 44.44,
+    "mediana": 26.0
+  },
+  "promedio_por_categoria": {
+    "CDMX": 3268.49,
+    "Oaxaca": 3263.95,
+    "Guadalajara": 3389.45,
+    "Cancun": 3304.61,
+    "Merida": 3328.38,
+    "Puerto Vallarta": 3139.25,
+    "Los Cabos": 3273.65,
+    "los cabos": 2869.83,
+    "cancun": 2876.54,
+    "OAXACA": 2980.41,
+    "LOS CABOS": 3298.18,
+    "merida": 3011.0,
+    "CANCUN": 4659.35,
+    "puerto vallarta": 3239.3,
+    "guadalajara": 2453.25,
+    "GUADALAJARA": 4314.5,
+    "PUERTO VALLARTA": 3016.78,
+    "cdmx": 3550.77,
+    "oaxaca": 4162.49,
+    "MERIDA": 3559.4
+  },
+  "filtrado": {
+    "condicion": "precio_noche > 2797.67",
+    "umbral_usado": 2797.67,
+    "n_registros_que_cumplen": 9886,
+    "porcentaje": 10.0
+  }
 }
