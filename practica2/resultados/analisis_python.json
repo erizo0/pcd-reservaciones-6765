@@ -1,0 +1,10 @@
+{
+    "total_registros": 103000,
+    "destinos": {
+        "": {
+            "total_reservaciones": 103000,
+            "precio_promedio_noche": 0.0,
+            "dias_anticipacion_promedio": 0.0
+        }
+    }
+}
