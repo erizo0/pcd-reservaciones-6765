@@ -10,6 +10,34 @@ Tema: Reservaciones
 
 ## Observaciones del profesor
 
+### Práctica 2 — evaluación (27-oct-2026)
+
+**Calificación: 100 / 100**
+
+Entregada el **25-oct-2026 a las 18:48**, dentro del plazo (la entrega cerraba el lun 26-oct), así que no lleva penalización por retraso.
+
+**Práctica correcta.** Los doce criterios salieron completos: el JSON coincide campo por campo con la solución de referencia de su tema y su semilla —conteos exactos y promedios dentro de tolerancia— y el código cumple todos los requisitos. Nada que corregir.
+
+**Lo que destaca:** **La mejor recuperación del grupo:** venían de 60 en P1 y esta práctica salió completa. Además separaron la mediana en su propia función (`calcular_mediana`) y usaron 7 `lambda`. De paso limpiaron los archivos basura de `practica2/` (commit *Limpia archivos basura de la practica 2*). Queda pendiente, sin efecto en la calificación, hacer esa misma limpieza en `practica3/` a `practica6/` y en `proyecto/`, donde siguen 15 archivos de prueba (`cccc.txt`, `ddd.txt`, `eeee.txt`, `fff.tx`, `ggg.txt`, `kkdkjdsjsdlsdk.txt`, `rreange.txt` y los que están dentro de cada `src/` y `resultados/`). Es el pendiente más viejo del repo.
+
+**Desglose:**
+
+| Criterio | Obtenido | Máximo |
+|---|:---:|:---:|
+| Nombres exactos de los entregables | 10 | 10 |
+| Requisitos de Git (3+ commits, rama integrada) | 8 | 8 |
+| Requisitos de código (5 funciones, `lambda`, `map`/`filter`) | 12 | 12 |
+| Encabezado del JSON: archivo, pareja, seed | 6 | 6 |
+| `valores_unicos_categorica` | 10 | 10 |
+| `conteo_por_categoria` | 10 | 10 |
+| `categoria_mas_frecuente` | 6 | 6 |
+| `top_3_categorias` | 8 | 8 |
+| `estadisticas_numerica_1` (con mediana) | 12 | 12 |
+| `estadisticas_numerica_2` (con mediana) | 8 | 8 |
+| `promedio_por_categoria` | 6 | 6 |
+| `filtrado` (percentil 90) | 4 | 4 |
+| **Total** | **100** | **100** |
+
 ### 13-oct-2026 — Correcciones de la Práctica 1
 
 **Calificación de P1: 60 → 90 / 100.**
@@ -74,11 +102,12 @@ Entregada el **6-oct-2026 a las 19:58**, dentro del plazo (la entrega cerraba el
 | Columna numérica_1 (nombre, válidos, mín, máx) | 5 | 13 |
 | Calidad de datos (celdas vacías) | 0 | 5 |
 | **Total** | **60** | **100** |
-### 22-sep-2026
 
-**Estatus:** 5/6 de la estructura esperada.
+### 26-sep-2026
 
-Les falta agregar `requirements.txt` en la raíz del repo. También notamos varios archivos sueltos sin contenido claro (`aaa.txt`, `bbb.txt`, ... `fff.tx`) dentro de cada carpeta `practicaN/`, y una carpeta `src/` extra en la raíz que no forma parte de la estructura esperada — les recomendamos limpiarlos. Ya les dejamos su dataset (`reservaciones-ruido_100.csv` y `_100000.csv`) dentro de `datos/`.
+**Estatus:** 6/6 de la estructura esperada.
+
+¡Felicidades, ya cumplen toda la estructura! Agregaron `requirements.txt` y borraron la carpeta `src/` extra en la raíz. Todavía les quedan los archivos sueltos sin sentido dentro de cada `practicaN/` (`aaa.txt`…`fff.tx`) y `ggg.txt` en `proyecto/` — les recomendamos limpiarlos.
 
 ### 23-sep-2026
 
@@ -88,8 +117,8 @@ Sigue pendiente agregar `requirements.txt` en la raíz. También siguen ahí los
 
 📖 **Práctica 1 ya está disponible.** La encontrarán en `labs/P1/P1_setup_reconocimiento.md`, dentro del repositorio del profesor: https://github.com/ESCOMLCD/pcd202701/blob/main/labs/P1/P1_setup_reconocimiento.md — léanla completa antes de empezar a programar, ahí está todo lo que deben hacer, el formato exacto de `resumen.txt` y la fecha de entrega (mar 6-oct).
 
-### 26-sep-2026
+### 22-sep-2026
 
-**Estatus:** 6/6 de la estructura esperada.
+**Estatus:** 5/6 de la estructura esperada.
 
-¡Felicidades, ya cumplen toda la estructura! Agregaron `requirements.txt` y borraron la carpeta `src/` extra en la raíz. Todavía les quedan los archivos sueltos sin sentido dentro de cada `practicaN/` (`aaa.txt`…`fff.tx`) y `ggg.txt` en `proyecto/` — les recomendamos limpiarlos.
+Les falta agregar `requirements.txt` en la raíz del repo. También notamos varios archivos sueltos sin contenido claro (`aaa.txt`, `bbb.txt`, ... `fff.tx`) dentro de cada carpeta `practicaN/`, y una carpeta `src/` extra en la raíz que no forma parte de la estructura esperada — les recomendamos limpiarlos. Ya les dejamos su dataset (`reservaciones-ruido_100.csv` y `_100000.csv`) dentro de `datos/`.
