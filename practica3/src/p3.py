@@ -100,7 +100,7 @@ seed = 3
 columna_num_1 = "precio_noche"
 columna_num_2 = "dias_anticipacion"
 
-ruta_csv = f"C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/P3/reservaciones-ruido_100.csv"
+ruta_csv = f"C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/P3/reservaciones-ruido_100000.csv"
 ruta_json = "C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/P3/resultados/analisis_numpy.json"
 
 arr_num_1 = cargar_columna_numerica(ruta_csv, columna_num_1)
