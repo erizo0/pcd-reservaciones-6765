@@ -1,0 +1,52 @@
+{
+  "archivo": "reservaciones-ruido_1000000.csv",
+  "pareja": "Cruz Gonzalez Erick Miguel y Escamilla Camarillo Ricardo",
+  "seed": 3,
+  "numerica_1": {
+    "columna": "precio_noche",
+    "n_valores_validos": 98869,
+    "media": 3277.04,
+    "desviacion_estandar": 8423.07,
+    "minimo": -26954.3,
+    "maximo": 325370.4,
+    "mediana": 1911.54,
+    "percentil_25": 1523.77,
+    "percentil_75": 2324.05
+  },
+  "numerica_2": {
+    "columna": "dias_anticipacion",
+    "n_valores_validos": 98877,
+    "media": 44.44,
+    "desviacion_estandar": 130.69,
+    "minimo": -580.0,
+    "maximo": 7200.0,
+    "mediana": 26.0,
+    "percentil_25": 15.0,
+    "percentil_75": 38.0
+  },
+  "outliers_numerica_1": {
+    "metodo": "desviacion_estandar_3",
+    "limite_inferior": -21992.16,
+    "limite_superior": 28546.23,
+    "n_outliers": 441,
+    "porcentaje": 0.45,
+    "outliers_minimo": -26954.3,
+    "outliers_maximo": 325370.4
+  },
+  "outliers_numerica_2": {
+    "metodo": "desviacion_estandar_3",
+    "limite_inferior": -347.62,
+    "limite_superior": 436.5,
+    "n_outliers": 972,
+    "porcentaje": 0.98,
+    "outliers_minimo": -580.0,
+    "outliers_maximo": 7200.0
+  },
+  "benchmark": {
+    "n_filas": 98869,
+    "tiempo_bucle_python_seg": 0.018554,
+    "tiempo_numpy_seg": 0.000735,
+    "factor_velocidad": 25.2,
+    "operacion_medida": "calcular media y desviacion estandar"
+  }
+}
