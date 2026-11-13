@@ -94,3 +94,36 @@ def benchmark_numpy_vs_bucle(arr_np):
         "factor_velocidad": factor,
         "operacion_medida": "calcular media y desviacion estandar"
     }
+tema = "Reservaciones"
+pareja = "Cruz Gonzalez Erick Miguel y Escamilla Camarillo Ricardo"
+seed = 3
+columna_num_1 = "precio_noche"
+columna_num_2 = "dias_anticipacion"
+
+ruta_csv = f"C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/P3/reservaciones-ruido_100.csv"
+ruta_json = "C:/Users/Laptop/Documents/ESCOM/Tercer semestre/PCD_2026/P3/resultados/analisis_numpy.json"
+
+arr_num_1 = cargar_columna_numerica(ruta_csv, columna_num_1)
+arr_num_2 = cargar_columna_numerica(ruta_csv, columna_num_2)
+
+stats_1 = calcular_estadisticas(arr_num_1, columna_num_1)
+stats_2 = calcular_estadisticas(arr_num_2, columna_num_2)
+
+outliers_1 = detectar_outliers(arr_num_1)
+outliers_2 = detectar_outliers(arr_num_2)
+
+bench = benchmark_numpy_vs_bucle(arr_num_1)
+
+resultado = {
+    "archivo": "reservaciones-ruido_1000000.csv",
+    "pareja": pareja,
+    "seed": seed,
+    "numerica_1": stats_1,
+    "numerica_2": stats_2,
+    "outliers_numerica_1": outliers_1,
+    "outliers_numerica_2": outliers_2,
+    "benchmark": bench
+}
+
+with open(ruta_json, "w") as f:
+    json.dump(resultado, f, indent=2)
