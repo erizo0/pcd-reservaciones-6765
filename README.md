@@ -10,6 +10,35 @@ Tema: Reservaciones
 
 ## Observaciones del profesor
 
+### Práctica 3 — evaluación (16-nov-2026)
+
+**Calificación: 98 / 100**
+
+Entregada el **13-nov-2026 a las 13:47**, dentro del plazo (la entrega cerraba el vie 13-nov), así que no lleva penalización por retraso.
+
+**Lo que destaca:** Siete commits que cuentan el avance real (definir funciones, probar con 100 filas, probar con 100,000, limpiar la carpeta) y una rama integrada. Los 37 valores estadísticos están correctos.
+
+**Criterios cubiertos al 100 %:** Nombres exactos de los entregables; Requisitos de Git (3+ commits, rama integrada); Requisitos de código (NumPy, sin pandas); `numerica_1` (8 estadísticos); `numerica_2` (8 estadísticos); `outliers_numerica_1` (±3 desviaciones); `outliers_numerica_2` (±3 desviaciones); `benchmark` (NumPy vs bucle puro).
+
+**Observaciones:**
+
+1. El encabezado del JSON no corresponde a su dataset. En `practica3/src/analisis_numpy.py` línea 99 está escrito a mano `seed = 3`, y su semilla es la **6765**; en la línea 118 el nombre quedó como `reservaciones-ruido_1000000.csv`, con un cero de más (son 100,000 filas, no 1,000,000). El CSV que sí leyeron en la línea 103 es el correcto, y por eso **todos sus cálculos coinciden con la referencia**: el descuento es sólo por el encabezado. Se arregla poniendo `seed = 6765` y corrigiendo el nombre del archivo.
+2. Sin efecto en la calificación: la línea 103 lleva una ruta absoluta (`C:/Users/Laptop/Documents/...`), así que el script no corre en otra máquina. Conviene leer el CSV por ruta relativa.
+
+**Desglose:**
+
+| Criterio | Obtenido | Máximo |
+|---|:---:|:---:|
+| Nombres exactos de los entregables | 8 | 8 |
+| Requisitos de Git (3+ commits, rama integrada) | 8 | 8 |
+| Requisitos de código (NumPy, sin pandas) | 12 | 12 |
+| Encabezado del JSON: archivo, pareja, seed | 4 | 6 |
+| `numerica_1` (8 estadísticos) | 20 | 20 |
+| `numerica_2` (8 estadísticos) | 16 | 16 |
+| `outliers_numerica_1` (±3 desviaciones) | 12 | 12 |
+| `outliers_numerica_2` (±3 desviaciones) | 10 | 10 |
+| `benchmark` (NumPy vs bucle puro) | 8 | 8 |
+| **Total** | **98** | **100** |
 ### Práctica 2 — evaluación (27-oct-2026)
 
 **Calificación: 100 / 100**
